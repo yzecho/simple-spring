@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="teacher" class="io.yzecho.bean.Teacher">
+        <property name="teacherName" value="Sally"/>
+        <property name="teacherAddress" value="北京"/>
+        <property name="student" ref="student"/>
+    </bean>
+    <bean id="student" class="io.yzecho.bean.Student">
+        <property name="studentName" value="yzecho"/>
+        <property name="studentSex" value="男"/>
+    </bean>
+
+    <bean id="helloService" class="io.yzecho.simple.aop.HelloServiceImpl"/>
+    <bean id="logInterceptor" class="io.yzecho.aop.LogInterceptor"/>
+</beans>
